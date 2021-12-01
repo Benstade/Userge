@@ -11,7 +11,7 @@ from re import compile as comp_regex
 from time import time
 
 import ujson
-import youtube_dl
+import yt_dlp
 from pyrogram import filters
 from pyrogram.types import (
     CallbackQuery,
@@ -22,7 +22,7 @@ from pyrogram.types import (
     InputMediaVideo,
 )
 from wget import download
-from youtube_dl.utils import DownloadError, ExtractorError, GeoRestrictedError
+from yt_dlp.utils import DownloadError, ExtractorError, GeoRestrictedError
 from youtubesearchpython import VideosSearch
 
 from userge import Config, Message, pool, userge
